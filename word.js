@@ -1,24 +1,26 @@
 var Letter = require("./Letter");
 
 // Create the Word conststructor
-
 function Word(string) {
     this.letters = [];
     this.split = function () {
-        var word = string.split("");
-        for (var i = 0; i < word.length; i++) {
-            var letter = new Letter(word[i], false);
+        string = string.split("");
+        for (var i = 0; i < string.length; i++) {
+            var letter = new Letter(string[i]);
             this.letters.push(letter);
         };
     };
-    this.constructWord = function () {
-        var newWord = [];
+    this.toString = function () {
+        var show = "";
         for (var i = 0; i < this.letters.length; i++) {
-            this.letters[i].displayChar();
-            newWord.push(this.letters[i].string);
+            show += this.letters[i].display;
         };
-        newWord = newWord.join(" ");
-        console.log(`Current Word: ${newWord}`);
+        console.log(show);
+    };
+    this.checkGuess = function (char) {
+        for (var i = 0; i < this.letters.length; i++) {
+            this.letters[i].updateGuessed(char);
+        };
     };
 };
 
