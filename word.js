@@ -15,7 +15,9 @@ function Word(string) {
         for (var i = 0; i < this.letters.length; i++) {
             show += this.letters[i].display;
         };
-        console.log(show);
+        console.log();
+        console.log(`Current Word:\n${show}`);
+        console.log();
     };
     this.checkGuess = function (char) {
         for (var i = 0; i < this.letters.length; i++) {
