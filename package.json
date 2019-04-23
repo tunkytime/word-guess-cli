@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/tunkytime/word-guess-cli#readme",
   "dependencies": {
+    "cli-spinner": "^0.2.10",
     "inquirer": "^6.3.1",
     "prompt": "^1.0.0"
   }

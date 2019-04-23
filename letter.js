@@ -6,9 +6,8 @@ function Letter(string) {
     this.updateGuessed = function (char) {
         if (char == this.string) {
             this.guessed = true;
-        }
-        if (this.guessed) {
             this.display = ` ${this.string}`;
+            return true
         };
     };
 };
