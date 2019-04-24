@@ -2,7 +2,6 @@ var Word = require("./Word");
 var inquirer = require("inquirer");
 
 var words = [
-  "javascript",
   "function",
   "variable",
   "programming",
