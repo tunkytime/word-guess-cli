@@ -1,6 +1,6 @@
 # word-guess-cli
 
-![Start](/screenshots/start.png)
-![Guess](/screenshots/guess.png)
-![Correct](/screenshots/correct.png)
-![All](/screenshots/all-correct.png)
+![Start](screenshots/start.jpg)
+![Guess](screenshots/guess.jpg)
+![Correct](screenshots/correct.jpg)
+![All](screenshots/all-correct.jpg)
